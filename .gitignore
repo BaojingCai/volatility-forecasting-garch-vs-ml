@@ -1,0 +1,33 @@
+# =============================================================================
+# .gitignore — Master's Thesis code repository
+# =============================================================================
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Numba JIT cache (MF2-GARCH variance loop)
+*.nbi
+*.nbc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Licensed source data — VOLARE extract, not redistributable
+data/raw/*.csv
+data/processed/*.xlsx
+
+# Thesis document (kept out of the code repository)
+Thesis_*.pdf

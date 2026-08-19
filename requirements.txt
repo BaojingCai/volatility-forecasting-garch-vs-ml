@@ -1,0 +1,84 @@
+# =============================================================================
+# requirements.txt
+# =============================================================================
+# Master's Thesis:
+# Machine Learning versus GARCH-type Models in Volatility
+# Forecasting: Evidence from the U.S. Equity Market
+#
+# Program: 
+# M.Sc. Economics (Macro & Financial Econometrics)
+# Heidelberg University, Germany
+#
+# Purpose:
+# This file specifies all Python package dependencies required to
+# reproduce the empirical analysis, forecasting models, evaluation
+# procedures, and visualizations presented in my thesis.
+#
+# Installation: pip install -r requirements.txt
+#
+# Package versions recorded from the environment used to produce
+# all results reported in my thesis (Python 3.13).
+# =============================================================================
+
+
+# =============================================================================
+# CORE DATA PROCESSING
+# =============================================================================
+
+pandas==2.3.3       # Data manipulation and tabular data structures
+numpy==2.2.6        # Numerical computing and array operations
+scipy==1.17.1       # Scientific computing and optimization routines
+
+
+# =============================================================================
+# DATA VISUALIZATION
+# =============================================================================
+
+matplotlib==3.10.9  # Publication-quality statistical graphics
+seaborn==0.13.2     # High-level statistical visualization library
+
+
+# =============================================================================
+# ECONOMETRIC MODELS
+# =============================================================================
+
+arch==8.0.0         # GARCH-family volatility models
+statsmodels==0.14.6 # Statistical modeling and hypothesis testing
+
+
+# =============================================================================
+# MACHINE LEARNING MODELS
+# =============================================================================
+
+scikit-learn==1.8.0 # Classical machine learning algorithms and evaluation tools
+xgboost==3.2.0      # Gradient boosting framework used for volatility forecasting
+
+
+# =============================================================================
+# PERFORMANCE
+# =============================================================================
+
+# MF2-GARCH uses a JIT-compiled variance loop via Numba for ~50–100x speedup.
+# Without Numba the model falls back to a pure-Python loop (extremely slow).
+numba==0.61.2       # JIT compiler — speeds up MF2-GARCH rolling estimation
+
+
+# =============================================================================
+# FILE INPUT / OUTPUT
+# =============================================================================
+
+openpyxl==3.1.5     # Reading and writing Excel files
+
+
+# =============================================================================
+# NOTEBOOK ENVIRONMENT
+# =============================================================================
+
+jupyter==1.1.1      # Interactive computational notebooks
+notebook==7.5.6     # Jupyter notebook server
+ipykernel==7.2.0    # Python kernel for Jupyter environments
+
+
+# =============================================================================
+# END OF FILE
+# =============================================================================
